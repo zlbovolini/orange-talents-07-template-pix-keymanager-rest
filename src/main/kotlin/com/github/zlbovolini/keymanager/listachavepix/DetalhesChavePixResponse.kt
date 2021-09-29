@@ -14,7 +14,7 @@ data class DetalhesChavePixResponse(
     val tipoChave: TipoChave,
     val chave: String,
     val tipoConta: TipoConta,
-    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss", timezone = "UTC")
+    //@JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss", timezone = "UTC")
     val criadoEm: Instant
 ) {
 
