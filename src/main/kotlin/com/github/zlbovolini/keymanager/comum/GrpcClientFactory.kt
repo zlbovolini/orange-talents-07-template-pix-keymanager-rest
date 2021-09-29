@@ -1,6 +1,7 @@
 package com.github.zlbovolini.keymanager.comum
 
 import com.github.zlbovolini.keymanager.grpc.ConsultaChavePixServiceGrpc
+import com.github.zlbovolini.keymanager.grpc.ListaChavePixServiceGrpc
 import com.github.zlbovolini.keymanager.grpc.RegistraChavePixServiceGrpc
 import com.github.zlbovolini.keymanager.grpc.RemoveChavePixServiceGrpc
 import io.grpc.ManagedChannel
@@ -21,4 +22,7 @@ class GrpcClientFactory(
 
     @Singleton
     fun consultaChavePixGrpc() = ConsultaChavePixServiceGrpc.newBlockingStub(channel)
+
+    @Singleton
+    fun listaChavePixGrpc() = ListaChavePixServiceGrpc.newBlockingStub(channel)
 }

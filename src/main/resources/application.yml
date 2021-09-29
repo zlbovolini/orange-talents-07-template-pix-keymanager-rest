@@ -13,3 +13,7 @@ grpc:
       address: 'localhost:50051'
       plaintext: true
       max-retry-attempts: 5
+
+jackson:
+  serialization:
+    writeDatesAsTimestamps: false
