@@ -11,7 +11,7 @@ import javax.validation.constraints.Size
 
 @Pix
 @Introspected
-data class NovaChavePixRequest(
+data class NovaChavePixHttpRequest(
 
     @field:NotNull
     val tipoChave: TipoChave,

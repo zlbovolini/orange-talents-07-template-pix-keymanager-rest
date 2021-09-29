@@ -1,8 +1,10 @@
 package com.github.zlbovolini.keymanager.registrachavepix
 
 import com.github.zlbovolini.keymanager.grpc.RegistraChavePixResponse
+import io.micronaut.core.annotation.Introspected
 
-data class NovaChavePixResponse(
+@Introspected
+data class NovaChavePixHttpResponse(
     val pixId: String
 ) {
     constructor(response: RegistraChavePixResponse) :

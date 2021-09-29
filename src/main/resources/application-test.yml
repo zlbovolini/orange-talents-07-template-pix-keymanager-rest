@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: Key Manager Rest Test
+
+grpc:
+  client:
+    plaintext: true
+    max-retry-attempts: 10
+  channels:
+    key-manager:
+      address: 'localhost:50051'
+      plaintext: true
+      max-retry-attempts: 5
